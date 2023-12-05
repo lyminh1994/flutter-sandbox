@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(const IAmRich());
+}
+
+class IAmRich extends StatelessWidget {
+  const IAmRich({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       title: 'I am Rich',
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blueGrey[900],
           title: const Center(
             child: Text(
-              'I am Rich',
+              'I\'m Rich',
               style: TextStyle(color: Colors.white),
             ),
           ),
@@ -20,6 +27,6 @@ void main() {
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
